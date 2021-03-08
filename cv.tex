@@ -1,0 +1,99 @@
+\documentclass{soft-cv}
+
+\themeColor{cvDarkBlue}
+\name{Christopher Poenaru}
+\tagline{Computer Engineer {\hspace{5pt}--\hspace{5pt}}  Functional Programmer {\hspace{5pt}--\hspace{5pt}} Triathlete {\hspace{5pt}--\hspace{5pt}} Rock Climber}
+\email{kiambogo@gmail.com}
+\web{chrispoenaru.com}
+\linkedin{chrispoenaru}
+\github{kiambogo}
+
+\skills{
+  \skillsItem{Scala}
+  \skillsItem{Go}
+  \skillsItem{Haskell}
+  \skillsItem{Java}
+  \skillsItem{AWS + Heroku}
+  \skillsItem{Postgres}
+  \skillsItem{Redis}
+  \skillsItem{Cassandra}
+  \skillsItem{MongoDB}
+}
+
+\about{
+  Computer engineer with \textbf{5+ years experience designing, implementing}, and \textbf{owning} high-performance, \textbf{back-end} software and distributed systems. Cultivates a rich understanding of multiple layers of computer systems, from high-level applications and \textbf{database performance tuning}, to \textbf{infrastructure, networking}, and \textbf{security}.
+}
+
+\projects{
+  \cvEntry{Scrava}{}{
+    \cvSubEntry{\href{https://github.com/kiambogo/scrava}{\faGithubSquare \hspace{0.5mm} kiambogo/scrava}}{}{
+      \entryItems{
+        \item{Community recognized, open-source Scala client for the Strava API}
+      }
+    }
+  }
+  \cvEntry{Road Quality}{}{
+    \cvSubEntry{\href{https://github.com/trifectalabs/roadquality}{\faGithubSquare \hspace{0.5mm} trifectalabs/roadquality}}{}{
+      \entryItems{
+        \item{Crowdsourced road quality and traffic safety data for cyclists}
+        \item{Allows cyclists to rate sections of a road or path to build a
+          community driven topology of the safest cycling routes}
+        \item{API and pathing logic implemented in Scala; custom mapping engine built with Rust}
+      }
+    }
+  }
+}
+
+\experience{
+  \cvEntry{MasonHub}{Los Angeles, CA (Remote)}{
+    \cvSubEntry{Software Engineer}{Jan. 2019 - Jan. 2021}{
+      \entryItems{
+        \item{Third engineer at a fast paced 3PL startup; responsible for designing, building, and owning multiple core systems that scaled the company from 0 clients to 35+ within 2 years}
+        \item{Spearheaded Shopify integration, providing real-time inventory levels and ingesting customer orders for fulfillment}
+        \item{Architected fault-tolerant, horizontally scalable printer management system allowing for custom supply chain document creation. Successfully printed over 250,000+ documents}
+        \item{Refactored critical, production database schema improving average inventory ledger query times by 90\% and bulk order processing time by 75\%}
+      }
+    }
+  }
+  \cvEntry{Hudson's Bay Company}{New York, NY (Remote)}{
+    \cvSubEntry{Lead Software Engineer}{Aug. 2018 - Jan. 2019}{
+      \entryItems{
+        \item {Engineering lead of a team of 4 intermediate and senior level developers}
+        \item {Directed team towards adopting a functional code base with Scala Cats + FS2}
+        \item {Architected a multi-service initiative to optimize safety stock levels and reduce order shorting}
+      }
+    }
+    \cvSubEntry{Software Engineer II}{Nov. 2017 - Aug. 2018}{
+      \entryItems{
+        \item {Conflated inventory management systems across banners as part of
+          the shared selling initiative, driving double-digit growth for the Gilt banner}
+      }
+    }
+    \cvSubEntry{Software Engineer}{July 2016 - Nov. 2017}{
+      \entryItems{
+        \item {Refactored mission critical service to use Postgres instead of Mongo; strategized deployment resulting in zero downtime}
+        \item {Modified website delivery window calculation to include customer location, improving checkout conversion across many US states}
+      }
+    }
+  }
+  \cvEntry{Strava}{San Francisco, CA}{
+    \cvSubEntry{Platform Engineer Intern}{Aug. 2015 - Dec. 2015}{
+      \entryItems{
+        \item{Optimized user characteristics processing with development of Scala service leveraging Spark}
+        \item{Designed and deployed Spark cluster to production atop of Apache Mesos}
+      }
+    }
+  }
+}
+
+\education{
+  \cvEntry{University of Waterloo}{Waterloo, Canada}{
+    \cvSubEntry{BASc. Computer Engineering}{2011-2016}{}
+  }
+}
+
+% Ensure that document defintion is at the bottom
+\begin{document}
+    {\mkHeader}
+    {\mkBody}
+\end{document}

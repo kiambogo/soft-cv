@@ -1,0 +1,5 @@
+*.pdf
+*.out
+*.synctex.gz
+*.aux
+.auctex-auto/
