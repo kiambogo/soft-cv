@@ -20,5 +20,5 @@ jobs:
           apt-get update && apt-get install -y fonts-font-awesome
           fmtutil-sys --all 1> /dev/null || true
           tlmgr init-usertree
-          tlmgr install fontawesome
+          tlmgr install fontawesome 1> /dev/null || true
           xelatex cv.tex
