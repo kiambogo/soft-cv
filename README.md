@@ -1,5 +1,7 @@
 # SoftCV
 
+[![Build](https://github.com/kiambogo/soft-cv/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/kiambogo/soft-cv/actions/workflows/build.yml)
+
 ### A LaTeX template for a [software engineer focused] curriculum vitae.
 
 <img src="https://user-images.githubusercontent.com/4472397/110373020-dc0c8f80-8003-11eb-9d71-3cc6c753b7ad.png" width="800">
