@@ -1,99 +1,70 @@
-\documentclass{soft-cv}
+% CV using custom class with minipage-based sections
+\documentclass{cv}
 
-\themeColor{cvDarkBlue}
-\name{Christopher Poenaru}
-\tagline{Computer Engineer {\hspace{5pt}--\hspace{5pt}}  Functional Programmer {\hspace{5pt}--\hspace{5pt}} Triathlete {\hspace{5pt}--\hspace{5pt}} Rock Climber}
-\email{kiambogo@gmail.com}
-\web{chrispoenaru.com}
-\linkedin{chrispoenaru}
-\github{kiambogo}
-
-\skills{
-  \skillsItem{Scala}
-  \skillsItem{Go}
-  \skillsItem{Haskell}
-  \skillsItem{Java}
-  \skillsItem{AWS + Heroku}
-  \skillsItem{Postgres}
-  \skillsItem{Redis}
-  \skillsItem{Cassandra}
-  \skillsItem{MongoDB}
-}
-
-\about{
-  Computer engineer with \textbf{5+ years experience designing, implementing}, and \textbf{owning} high-performance, \textbf{back-end} software and distributed systems. Cultivates a rich understanding of multiple layers of computer systems, from high-level applications and \textbf{database performance tuning}, to \textbf{infrastructure, networking}, and \textbf{security}.
-}
-
-\projects{
-  \cvEntry{Scrava}{}{
-    \cvSubEntry{\href{https://github.com/kiambogo/scrava}{\faGithubSquare \hspace{0.5mm} kiambogo/scrava}}{}{
-      \entryItems{
-        \item{Community recognized, open-source Scala client for the Strava API}
-      }
-    }
-  }
-  \cvEntry{Road Quality}{}{
-    \cvSubEntry{\href{https://github.com/trifectalabs/roadquality}{\faGithubSquare \hspace{0.5mm} trifectalabs/roadquality}}{}{
-      \entryItems{
-        \item{Crowdsourced road quality and traffic safety data for cyclists}
-        \item{Allows cyclists to rate sections of a road or path to build a
-          community driven topology of the safest cycling routes}
-        \item{API and pathing logic implemented in Scala; custom mapping engine built with Rust}
-      }
-    }
-  }
-}
-
-\experience{
-  \cvEntry{MasonHub}{Los Angeles, CA (Remote)}{
-    \cvSubEntry{Software Engineer}{Jan. 2019 - Jan. 2021}{
-      \entryItems{
-        \item{Third engineer at a fast paced 3PL startup; responsible for designing, building, and owning multiple core systems that scaled the company from 0 clients to 35+ within 2 years}
-        \item{Spearheaded Shopify integration, providing real-time inventory levels and ingesting customer orders for fulfillment}
-        \item{Architected fault-tolerant, horizontally scalable printer management system allowing for custom supply chain document creation. Successfully printed over 250,000+ documents}
-        \item{Refactored critical, production database schema improving average inventory ledger query times by 90\% and bulk order processing time by 75\%}
-      }
-    }
-  }
-  \cvEntry{Hudson's Bay Company}{New York, NY (Remote)}{
-    \cvSubEntry{Lead Software Engineer}{Aug. 2018 - Jan. 2019}{
-      \entryItems{
-        \item {Engineering lead of a team of 4 intermediate and senior level developers}
-        \item {Directed team towards adopting a functional code base with Scala Cats + FS2}
-        \item {Architected a multi-service initiative to optimize safety stock levels and reduce order shorting}
-      }
-    }
-    \cvSubEntry{Software Engineer II}{Nov. 2017 - Aug. 2018}{
-      \entryItems{
-        \item {Conflated inventory management systems across banners as part of
-          the shared selling initiative, driving double-digit growth for the Gilt banner}
-      }
-    }
-    \cvSubEntry{Software Engineer}{July 2016 - Nov. 2017}{
-      \entryItems{
-        \item {Refactored mission critical service to use Postgres instead of Mongo; strategized deployment resulting in zero downtime}
-        \item {Modified website delivery window calculation to include customer location, improving checkout conversion across many US states}
-      }
-    }
-  }
-  \cvEntry{Strava}{San Francisco, CA}{
-    \cvSubEntry{Platform Engineer Intern}{Aug. 2015 - Dec. 2015}{
-      \entryItems{
-        \item{Optimized user characteristics processing with development of Scala service leveraging Spark}
-        \item{Designed and deployed Spark cluster to production atop of Apache Mesos}
-      }
-    }
-  }
-}
-
-\education{
-  \cvEntry{University of Waterloo}{Waterloo, Canada}{
-    \cvSubEntry{BASc. Computer Engineering}{2011-2016}{}
-  }
-}
-
-% Ensure that document defintion is at the bottom
 \begin{document}
-    {\mkHeader}
-    {\mkBody}
+
+% Header
+\cvheader{Christopher Poenaru}{Staff Software Engineer}{%
+  kiambogo@gmail.com \hspace{0.35em}$\cdot$\hspace{0.35em}
+  chrispoenaru.com \hspace{0.35em}$\cdot$\hspace{0.35em}
+  linkedin.com/in/chrispoenaru
+}
+
+% About & Skills Section (combined in minipage layout)
+\cvabout{%
+  \textbf{Staff engineer who turns security and compliance into competitive advantages.} Builds zero-trust platforms and data isolation systems that enable Fortune 500 partnerships. 9+ years architecting scalable infrastructure while navigating GRC, Legal, and Security requirements. Hands-on technical leader who drives cross-organizational change.
+}{%
+  \skillline{Core}{Go, Python, Scala}
+  \skillline{Platform}{Kubernetes, Envoy, Istio}
+  \skillline{Security}{mTLS, PKI, OAuth2}
+  \skillline{Cloud}{AWS, Azure}
+  \textbf{Data:} Postgres, Redis
+}
+
+\vspace{0.75em}
+
+% Experience Section (wrapped in minipage)
+\begin{cvsection}{Experience}
+
+\cvjob{Abnormal AI}{San Francisco, CA (Remote)}{Staff Software Engineer, Platform}{Mar 2024 -- Present}{%
+  \item Built Platform Security function from zero to 14-engineer organization, establishing secure-by-default infrastructure serving 300+ engineers company-wide; enabled Fortune 500 enterprise growth by solving critical access control, auditability, and data isolation requirements for product with privileged email access
+  \item Architected multi-tenant data isolation platform enabling Fortune 50 financial services partnerships; designed extensible routing framework supporting strict data residency, compliance, and isolation requirements across multiple global regions
+  \item Built automated customer data deletion system clearing multi-year compliance backlog by CISO deadline; architected pipeline handling millions of records across dozens of datastores while maintaining production database performance; established company-wide data governance standards for customer data lifecycle management
+}
+
+\vspace{0.5em}
+
+\noindent\textbf{\textit{Senior Software Engineer, Platform}} \hfill {\color{lightgray}\textit{May 2021 -- Mar 2024}}
+\begin{itemize}[itemsep=0.42em, topsep=0.33em]
+  \item Designed and built centralized token service handling 20K+ QPS, protecting thousands of OAuth2 secrets; introduced Go and gRPC as first production services, eliminating org-wide unaudited secret access
+  \item Architected automated certificate rotation system managing 10K+ integration keys on 90-day cycles, achieving zero expiration incidents through dark-launch validation and Prometheus monitoring
+  \item Led company-wide mTLS rollout across dozens of microservices using Envoy sidecars; built PKI infrastructure (AWS ACM PCA) with cert-manager automation and zero-downtime migration
+\end{itemize}
+
+\vspace{0.65em}
+
+\cvjob{MasonHub}{Los Angeles, CA (Remote)}{Software Engineer}{Jan 2019 -- Jan 2021}{%
+  \item Third engineer at 3PL startup; designed and owned core platform systems scaling company from 0 to 35+ clients over 2 years
+  \item Built fault-tolerant, horizontally scalable printer management system processing 250k+ supply chain documents annually
+  \item Refactored production database schema, improving inventory query performance by 90\% and bulk order processing by 75\%
+}
+
+\vspace{0.65em}
+
+\cvjob{Hudson's Bay Company}{New York, NY (Remote)}{Lead Software Engineer}{July 2016 -- Jan 2019}{%
+  \item Led team of 4 engineers; architected multi-service platform for inventory optimization and order fulfillment
+  \item Unified inventory management system across multiple retail banners, driving double-digit revenue growth
+}
+
+\end{cvsection}
+
+\vspace{0.65em}
+
+% Education Section (wrapped in minipage)
+\begin{cvsection}{Education}
+
+\cveducation{University of Waterloo}{Waterloo, Canada}{BASc. Computer Engineering}{2011 -- 2016}
+
+\end{cvsection}
+
 \end{document}
