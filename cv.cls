@@ -82,7 +82,7 @@
 % About section with two columns
 % Usage: \cvabout{about text}{skills content}
 \newcommand{\cvabout}[2]{%
-  \noindent\begin{minipage}[t]{0.68\textwidth}
+  \noindent\begin{minipage}[t]{0.65\textwidth}
     \vspace{0pt}
     {\LARGE\bfseries\color{primaryblue}\hspace*{-12pt}\textcolor{accentblue}{\rule[-0.2em]{0.5pt}{1.2em}}\hspace{10pt}About}\\[0.6em]
     \begin{minipage}[t]{0.95\textwidth}
@@ -90,9 +90,9 @@
     \end{minipage}
   \end{minipage}%
   \hfill
-  \begin{minipage}[t]{0.29\textwidth}
+  \begin{minipage}[t]{0.30\textwidth}
     \vspace{0pt}
-    {\LARGE\bfseries\color{primaryblue}\hspace*{-12pt}\textcolor{accentblue}{\rule[-0.2em]{0.5pt}{1.2em}}\hspace{10pt}Skills}\\[0.6em]
+    {\LARGE\bfseries\color{primaryblue}\hspace*{-12pt}\textcolor{accentblue}{\rule[-0.2em]{0.5pt}{1.2em}}\hspace{10pt}Skills}\\[0.3em]
     #2
   \end{minipage}
 }

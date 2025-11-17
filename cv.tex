@@ -10,61 +10,64 @@
   linkedin.com/in/chrispoenaru
 }
 
+\vspace{0.3em}
+
 % About & Skills Section (combined in minipage layout)
 \cvabout{%
-  \textbf{Staff engineer who turns security and compliance into competitive advantages.} Builds zero-trust platforms and data isolation systems that enable Fortune 500 partnerships. 9+ years architecting scalable infrastructure while navigating GRC, Legal, and Security requirements. Hands-on technical leader who drives cross-organizational change.
+  \textbf{Staff engineer who turns security and compliance into competitive advantages.} Builds zero-trust platforms and data isolation systems that enable Fortune 500 partnerships. 9+ years architecting scalable
+  infrastructure at the intersection of security, compliance, and platform engineering. Technical leader driving cross-organizational change.
+
 }{%
   \skillline{Core}{Go, Python, Scala}
   \skillline{Platform}{Kubernetes, Envoy, Istio}
   \skillline{Security}{mTLS, PKI, OAuth2}
-  \skillline{Cloud}{AWS, Azure}
-  \textbf{Data:} Postgres, Redis
+  \skillline{Cloud}{AWS, Azure, Terraform}
+  \skillline{Observability}{Prometheus, Grafana}
+  \skillline{Data}{Postgres, Redis}
 }
 
-\vspace{0.75em}
+\vspace{0.45em}
 
 % Experience Section (wrapped in minipage)
 \begin{cvsection}{Experience}
 
 \cvjob{Abnormal AI}{San Francisco, CA (Remote)}{Staff Software Engineer, Platform}{Mar 2024 -- Present}{%
-  \item Built Platform Security function from zero to 14-engineer organization, establishing secure-by-default infrastructure serving 300+ engineers company-wide; enabled Fortune 500 enterprise growth by solving critical access control, auditability, and data isolation requirements for product with privileged email access
-  \item Architected multi-tenant data isolation platform enabling Fortune 50 financial services partnerships; designed extensible routing framework supporting strict data residency, compliance, and isolation requirements across multiple global regions
-  \item Built automated customer data deletion system clearing multi-year compliance backlog by CISO deadline; architected pipeline handling millions of records across dozens of datastores while maintaining production database performance; established company-wide data governance standards for customer data lifecycle management
+  \item Built Platform Security function from 0 to 14-engineer organization, establishing secure-by-default infrastructure serving 300+ engineers; enabled Fortune 500 partnerships by solving access control, auditability, and data isolation requirements
+  \item Architected multi-tenant data isolation platform enabling Fortune 50 financial services partnerships; designed extensible routing framework supporting strict data residency and compliance requirements across global regions
+  \item Built automated customer data deletion system meeting critical CISO deadline, processing millions of records while establishing company-wide data governance standards
 }
 
-\vspace{0.5em}
+\vspace{0.3em}
 
 \noindent\textbf{\textit{Senior Software Engineer, Platform}} \hfill {\color{lightgray}\textit{May 2021 -- Mar 2024}}
 \begin{itemize}[itemsep=0.42em, topsep=0.33em]
-  \item Designed and built centralized token service handling 20K+ QPS, protecting thousands of OAuth2 secrets; introduced Go and gRPC as first production services, eliminating org-wide unaudited secret access
-  \item Architected automated certificate rotation system managing 10K+ integration keys on 90-day cycles, achieving zero expiration incidents through dark-launch validation and Prometheus monitoring
-  \item Led company-wide mTLS rollout across dozens of microservices using Envoy sidecars; built PKI infrastructure (AWS ACM PCA) with cert-manager automation and zero-downtime migration
+  \item Designed and built centralized token service serving 30K+ QPS, protecting thousands of customer integration secrets; introduced Go and gRPC to production, establishing architecture patterns and best practices adopted
+  org-wide
+  \item Led company-wide mTLS rollout across dozens of microservices using Envoy sidecars; built PKI (AWS ACM PCA) with cert-manager automation
+  \item Built automated certificate rotation system enforcing 90-day lifecycle for 10K+ integration keys,
+  strengthening security posture through short-lived credentials and eliminating manual rotation risks
 \end{itemize}
 
-\vspace{0.65em}
+\vspace{0.5em}
 
 \cvjob{MasonHub}{Los Angeles, CA (Remote)}{Software Engineer}{Jan 2019 -- Jan 2021}{%
-  \item Third engineer at 3PL startup; designed and owned core platform systems scaling company from 0 to 35+ clients over 2 years
+  \item Designed and owned core platform systems at early-stage 3PL, scaling from 0 to 35+ clients over 2 years
   \item Built fault-tolerant, horizontally scalable printer management system processing 250k+ supply chain documents annually
   \item Refactored production database schema, improving inventory query performance by 90\% and bulk order processing by 75\%
 }
 
-\vspace{0.65em}
+\vspace{0.5em}
 
 \cvjob{Hudson's Bay Company}{New York, NY (Remote)}{Lead Software Engineer}{July 2016 -- Jan 2019}{%
-  \item Led team of 4 engineers; architected multi-service platform for inventory optimization and order fulfillment
-  \item Unified inventory management system across multiple retail banners, driving double-digit revenue growth
+  \item Led team of 4 engineers building distributed inventory platform across 3 retail banners; architected multi-service order fulfillment system driving 15\%+ revenue growth through unified cross-banner inventory management
 }
 
 \end{cvsection}
 
-\vspace{0.65em}
+\vspace{0.4em}
 
 % Education Section (wrapped in minipage)
 \begin{cvsection}{Education}
 
 \cveducation{University of Waterloo}{Waterloo, Canada}{BASc. Computer Engineering}{2011 -- 2016}
-
-\end{cvsection}
-
-\end{document}
+\end{cvsection}\end{document}
