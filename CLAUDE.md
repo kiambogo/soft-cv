@@ -56,3 +56,14 @@ Before approving changes, ensure the resume passes the **"10-second test"**:
 - Can a recruiter grasp the candidate's level and impact in 10 seconds?
 - Do the most impressive accomplishments jump off the page?
 - Is the value proposition immediately clear?
+
+## Technical: Building the PDF
+
+### On macOS
+Use Tectonic to compile the LaTeX CV. Tectonic automatically handles package dependencies:
+
+```bash
+tectonic cv.tex
+```
+
+This will generate `cv.pdf` with all required packages downloaded automatically.
